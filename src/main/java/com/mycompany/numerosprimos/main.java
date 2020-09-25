@@ -11,17 +11,22 @@ public class main {
    public static void main(String args[]){
       int number;
       Scanner sc = new Scanner(System.in);
+      //Con esta clase se lee el numero
       System.out.println("Ingrese numero");
       number = Integer.parseInt(sc.nextLine());
-     
+     //Se transforma la linea ingresada a formato de numero
       for(int i = 2; i< number; i++) {
          while(number%i == 0) {
+             
             System.out.println(i+" ");
             number = number/i;
+            
          }
       }
       if(number >2) {
-         System.out.println(number);
+         //imprime el numero primo
+          System.out.println(number);
+         
       }
    }
 }
